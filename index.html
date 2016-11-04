@@ -11,67 +11,76 @@
   <body>
     <div class="container">
       <div class="jumbotron">
+        <img src="img/ninja.png">
         <h1>CLYDE'S PIZZA</h1>
         <h3>Online Ordering</h3>
       </div>
+      <form>
       <div id="order-type">
         <h3>Would you like to order for pickup or delivery?</h3>
-        <form>
-          <button class="btn-lg" autocomplete="off">Pickup</button>
-          <button class="btn-lg btn-default">Delivery</button>
-        </form>
+          <input type="checkbox" name="orderType" value="Pickup">Pickup
+          <input type="checkbox" name="orderType" value="Delivery">Delivery
         <div class="form-group">
-          <button class="btn-lg btn-default" id="order-type-next">Next</button>
+          <button type="button" class="btn-lg btn-default" id="order-type-next">Next</button>
         </div>
       </div>
       <div id="account-form">
         <h3>Enter your contact information please.</h3>
         <div id="account">
-          <form>
             <div class="form-group">
               <label for="name">Name</label>
               <input type="text" class="form-control" id="name">
             </div>
             <div class="form-group">
               <label for="street">Street</label>
-              <input type="text" class="form-control street">
+              <input type="text" class="form-control street" id="street">
             </div>
             <div class="form-group">
               <label for="city">City</label>
-              <input type="text" class="form-control city">
+              <input type="text" class="form-control city" id="city">
             </div>
             <div class="form-group">
               <label for="state">State</label>
-              <input type="text" class="form-control state">
+              <input type="text" class="form-control state" id="state">
             </div>
             <div class="form-group">
               <label for="state">Zip</label>
-              <input type="text" class="form-control zip">
+              <input type="text" class="form-control zip" id="zip">
             </div>
             <div class="form-group">
               <label for="state">Phone Number</label>
-              <input type="text" class="form-control number">
+              <input type="text" class="form-control number" id="number">
             </div>
-          </form>
         </div>
-        <button class="btn-lg btn-default" id="account-next">Next</button>
+        <button type="button" class="btn-lg btn-default" id="account-next">Next</button>
       </div>
       <div id="pizza-form">
-        <form>
-          <h3>Size:</h3>
+        <h3>Which size?</h3>
+        <input type="checkbox" name="pizza" value="Medium">Medium
+        <input type="checkbox" name="pizza" value="Large">Large
+
+      <h3>What toppings would like? ($1.00 each)</h3>
+        <input type="checkbox" name="pizza" value="Large">Green peppers
+        <input type="checkbox" name="pizza" value="Large">Red Onions
+        <input type="checkbox" name="pizza" value="Large">Cashews
+        <input type="checkbox" name="pizza" value="Large">Pineapple
+        <input type="checkbox" name="pizza" value="Large">Field Roast
+
+
+          <!-- <h3>Size:</h3>
           <button class="btn-lg btn-default">Medium</button>
           <p>14"</p>
           <button class="btn-lg btn-default">Large</button>
           <p>20"</p>
-          <h3>Toppings:</h3>
-          <button class="btn-lg btn-default">Green Peppers</button>
+          <h3>Toppings:</h3> -->
+          <!-- <button class="btn-lg btn-default">Green Peppers</button>
           <button class="btn-lg btn-default">Red Onions</button>
           <button class="btn-lg btn-default">Cashews</button>
           <button class="btn-lg btn-default">Pineapple</button>
-          <button class="btn-lg btn-default">Field Roast</button>
+          <button class="btn-lg btn-default">Field Roast</button> -->
           <button type="submit" class="btn">Submit your order!</button>
-        </form>
       </div>
+    </form>
       <div id="order-confirmation">
         <h3>Thank you for your order!</h3>
       </div>
