@@ -14,20 +14,67 @@
         <h1>CLYDE'S PIZZA</h1>
         <h3>Online Ordering</h3>
       </div>
-      <div id="account">
+      <div id="order-type">
+        <h3>Would you like to order for pickup or delivery?</h3>
         <form>
-          <h3>Make an account before placing an order for delivery.</h3>
+          <button class="btn-lg" autocomplete="off">Pickup</button>
+          <button class="btn-lg btn-default">Delivery</button>
         </form>
+        <div class="form-group">
+          <button class="btn-lg btn-default" id="order-type-next">Next</button>
+        </div>
+      </div>
+      <div id="account-form">
+        <h3>Enter your contact information please.</h3>
+        <div id="account">
+          <form>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name">
+            </div>
+            <div class="form-group">
+              <label for="street">Street</label>
+              <input type="text" class="form-control street">
+            </div>
+            <div class="form-group">
+              <label for="city">City</label>
+              <input type="text" class="form-control city">
+            </div>
+            <div class="form-group">
+              <label for="state">State</label>
+              <input type="text" class="form-control state">
+            </div>
+            <div class="form-group">
+              <label for="state">Zip</label>
+              <input type="text" class="form-control zip">
+            </div>
+            <div class="form-group">
+              <label for="state">Phone Number</label>
+              <input type="text" class="form-control number">
+            </div>
+          </form>
+        </div>
+        <button class="btn-lg btn-default" id="account-next">Next</button>
       </div>
       <div id="pizza-form">
         <form>
-          <h3>Size:<h3>
+          <h3>Size:</h3>
+          <button class="btn-lg btn-default">Medium</button>
+          <p>14"</p>
+          <button class="btn-lg btn-default">Large</button>
+          <p>20"</p>
           <h3>Toppings:</h3>
+          <button class="btn-lg btn-default">Green Peppers</button>
+          <button class="btn-lg btn-default">Red Onions</button>
+          <button class="btn-lg btn-default">Cashews</button>
+          <button class="btn-lg btn-default">Pineapple</button>
+          <button class="btn-lg btn-default">Field Roast</button>
+          <button type="submit" class="btn">Submit your order!</button>
         </form>
       </div>
       <div id="order-confirmation">
+        <h3>Thank you for your order!</h3>
       </div>
     </div>
-
   </body>
 </html>
