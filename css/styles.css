@@ -13,6 +13,11 @@
   font-size: 70pt;
 }
 
+form {
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
 #account-form {
   display: none;
 }
