@@ -18,21 +18,26 @@ form {
   margin-right: 30%;
 }
 
+.checkbox label{
+  font-size: 20pt;
+}
+
 #account-form {
   display: none;
+  font-size: 20pt;
 }
 
 #pizza-form {
   display: none;
+  font-size: 20pt;
 }
 
 #order-confirmation {
   display: none;
+  font-size: 25pt;
 }
 
-.input {
-  margin: 20px;
-}
+
 
 img {
   width: 70%;

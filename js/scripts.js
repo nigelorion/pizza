@@ -64,7 +64,9 @@ $(document).ready(function() {
     $("#userAddress").text(newUser.fullAddress());
     $("#userName").text(newUser.name);
     $("#userPrice").text(newPizza.priceChecker());
-    $("#contactNumber").text(newUser.phone)
+    $("#contactNumber").text(newUser.phone);
+    $("#pizzaSize").text(newPizza.size);
+    $("#allToppings").text(newPizza.toppings);
     $("#pizza-form").fadeOut(200);
     $("#order-confirmation").delay(200).fadeIn(200);
     });

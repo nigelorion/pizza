@@ -13,20 +13,16 @@
       <div class="jumbotron">
         <img src="img/ninja.png">
         <h1>CLYDE'S PIZZA</h1>
-        <h3>Online Ordering</h3>
+        <h2>Online Ordering</h2>
       </div>
       <form>
-      <div id="order-type">
-        <h3>Would you like to order for pickup or delivery?</h3>
-          <input type="checkbox" name="orderType" value="Pickup">Pickup
-          <input type="checkbox" name="orderType" value="Delivery">Delivery
-        <div class="form-group">
-          <button type="button" class="btn-lg btn-default" id="order-type-next">Next</button>
+        <div id="order-type">
+          <h2>Order a pizza for delivery?</h2>
+          <button type="button" class="btn-lg btn-default" id="order-type-next">Yes please!</button>
         </div>
-      </div>
-      <div id="account-form">
-        <h3>Enter your contact information please.</h3>
-        <div id="account">
+        <div id="account-form">
+          <h2>Enter your contact information please.</h2>
+          <div id="account">
             <div class="form-group">
               <label for="name">Name</label>
               <input type="text" class="form-control" id="name">
@@ -51,38 +47,34 @@
               <label for="state">Phone Number</label>
               <input type="text" class="form-control number" id="number">
             </div>
+          </div>
+          <button type="button" class="btn-lg btn-default" id="account-next">Next</button>
         </div>
-        <button type="button" class="btn-lg btn-default" id="account-next">Next</button>
-      </div>
-      <div id="pizza-form">
-        <h3>Which size?</h3>
-        <input type="checkbox" name="pizzaSize" value="Medium">Medium
-        <input type="checkbox" name="pizzaSize" value="Large">Large
-
-      <h3>What toppings would like? ($1.00 each)</h3>
-        <input type="checkbox" name="pizza" value="Green peppers">Green peppers
-        <input type="checkbox" name="pizza" value="Red Onions">Red Onions
-        <input type="checkbox" name="pizza" value="Cashews">Cashews
-        <input type="checkbox" name="pizza" value="Pineapple">Pineapple
-        <input type="checkbox" name="pizza" value="Field Roast">Field Roast
-
-
-          <!-- <h3>Size:</h3>
-          <button class="btn-lg btn-default">Medium</button>
-          <p>14"</p>
-          <button class="btn-lg btn-default">Large</button>
-          <p>20"</p>
-          <h3>Toppings:</h3> -->
-          <!-- <button class="btn-lg btn-default">Green Peppers</button>
-          <button class="btn-lg btn-default">Red Onions</button>
-          <button class="btn-lg btn-default">Cashews</button>
-          <button class="btn-lg btn-default">Pineapple</button>
-          <button class="btn-lg btn-default">Field Roast</button> -->
-          <button type="submit" class="btn">Submit your order!</button>
-      </div>
-    </form>
+        <div id="pizza-form">
+          <h2>Which size?</h2>
+          <select class="form-control" id="size">
+            <option disabled selected value> -- Please Select a size! -- </option>
+            <option value="Large">Large - $21.99</option>
+            <option value="Medium">Medium - $12.99</option>
+          </select>
+          <h2>What toppings would like? <em>($1.00 each)</em></h2>
+            <div class="checkbox">
+            <label><input type="checkbox" class="pizza" value="Green peppers">Green peppers</label>
+            <label><input type="checkbox" class="pizza" value="Red Onions">Red Onions</label>
+            <label><input type="checkbox" class="pizza" value="Cashews">Cashews</label>
+            <label><input type="checkbox" class="pizza" value="Pineapple">Pineapple</label>
+            <label><input type="checkbox" class="pizza" value="Field Roast">Field Roast</label>
+          </div>
+          <button type="submit" class="btn btn-lg">Submit your order!</button>
+        </div>
+      </form>
       <div id="order-confirmation">
-        <h3>Thank you for your order!</h3>
+        <h2>Thank you for your order <span id=userName></span>!</h2>
+        <p>Your total for the following order is $<span id="userPrice"></span></p>
+        <p>One <span id=pizzaSize></span> pizza, with: <span id="allToppings"></span>
+        <p>If we have any issues we will give you a call at <span id=contactNumber></span></p>
+        <p>Your order will be delivered to:<br>
+        <span id="userAddress"></span></p>
       </div>
     </div>
   </body>
